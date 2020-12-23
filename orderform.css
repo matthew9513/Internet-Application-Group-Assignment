@@ -73,6 +73,51 @@
     float: right;
     color: grey;
   }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  
+  
+  /* On screens that are 768px wide or less, make the menu links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 768px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  } 
+  
+  @media screen and (max-width: 1024px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+    .container{
+      width: 30%;
+    }
+  }
   
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
   @media (max-width: 800px) {

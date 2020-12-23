@@ -43,5 +43,8 @@ function validateForm() {
     }else if(h=="" && i==""){
         alert("Please fill in the fifth question.");
         return false;
+    }else{
+        alert("We have received your feedback! Have a nice day!");
+        return true;
     }
 }
